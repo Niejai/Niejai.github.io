@@ -1,0 +1,36 @@
+
+<script src="processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+// setup the drawing canvas
+size(2000, 1000);
+noStroke();
+
+// starting horizontal position of your drawing
+var x = 0;
+
+// main drawing loop
+draw = function() {
+
+	// keep re-drawing the picture till it reaches this x value
+	if (x <= 1500) {
+
+// YOUR DRAWING HERE
+
+		x = x + 3;
+
+		// once it reaches the x value, reset x
+		} else {
+		
+		x = 0
+
+// YOUR DRAWING HERE
+
+}
+
+};
+
+</script>
+<canvas id="mycanvas"></canvas>
+
+
