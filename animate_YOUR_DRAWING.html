@@ -1,36 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MyWebsite</title>
+    <script src="processing.js"></script>
+  </head>
+  <body>
 
-<script src="processing.js"></script>
-<script type="text/processing" data-processing-target="mycanvas">
+  <h1>Example Processing JS HTML</h1>
 
-// setup the drawing canvas
-size(2000, 1000);
-noStroke();
+  <script type="text/processing">
+	void setup() {
+		size(500,500);
+		background(65, 158, 3);
+    		//;
+// The ground
+fill(60, 255, 0);
+rect(0, 300, 400, 100);  
+// The sun
+fill(247, 247, 232);
+ellipse(80, 64, 100, 100);  
+// The snowman
+fill(246, 247, 237);
+ellipse(200, 300, 150, 150);
+ellipse(200, 200, 100, 100);
+ellipse(200, 120, 75, 75);
+	}
+	
+	void draw() {
+		//This gets run may times per second
+    		 background(105, 161, 224);
+// The ground
+fill(60, 255, 0);
+rect(0, 300, 400, 100);  
+// The sun
+fill(247, 247, 232);
+ellipse(80, 64, 100, 100);  
+// The snowman
+fill(246, 247, 237);
+ellipse(200, 300, 150, 150);
+ellipse(200, 200, 100, 100);
+ellipse(200, 120, 75, 75);
+	}
+  
+  
+  </script>
+  <canvas id="canvas1"></canvas>
 
-// starting horizontal position of your drawing
-var x = 0;
 
-// main drawing loop
-draw = function() {
-
-	// keep re-drawing the picture till it reaches this x value
-	if (x <= 1500) {
-
-// YOUR DRAWING HERE
-
-		x = x + 3;
-
-		// once it reaches the x value, reset x
-		} else {
-		
-		x = 0
-
-// YOUR DRAWING HERE
-
-}
-
-};
-
-</script>
-<canvas id="mycanvas"></canvas>
-
+  </body>
+</html>
 
