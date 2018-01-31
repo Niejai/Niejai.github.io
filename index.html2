@@ -1,0 +1,24 @@
+<script src="processing.js"></script>
+<script type="text/processing" data-processing-target="canvas">
+
+// setup the canvas
+size(2000, 1000);
+noStroke();
+
+// position the car
+var x = 10;
+
+background(151, 244, 247);
+
+// draw the car body
+fill(255, 0, 115);
+rect(x, 200, 100, 20);
+rect(x + 15, 178, 70, 40);
+
+// draw the wheels
+fill(77, 66, 66);
+ellipse(x + 25, 221, 24, 24);
+ellipse(x + 75, 221, 24, 24);
+
+</script>
+<canvas id="canvas"></canvas>
