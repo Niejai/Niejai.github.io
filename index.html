@@ -14,39 +14,74 @@
 		size(500,500);
 		background(65, 158, 3);
     		//;
-// The ground
-fill(60, 255, 0);
-rect(0, 300, 400, 100);  
-// The sun
-fill(247, 247, 232);
-ellipse(80, 64, 100, 100);  
-// The snowman
-fill(246, 247, 237);
-ellipse(200, 300, 150, 150);
-ellipse(200, 200, 100, 100);
-ellipse(200, 120, 75, 75);
+		// The ground
+		fill(60, 255, 0);
+		rect(0, 300, 400, 100);  
+		// The sun
+		fill(247, 247, 232);
+		ellipse(80, 64, 100, 100);  
+		// The snowman
+		fill(246, 247, 237);
+		ellipse(200, 300, 150, 150);
+		ellipse(200, 200, 100, 100);
+		ellipse(200, 120, 75, 75);
 	}
 	
 	void draw() {
 		//This gets run may times per second
     		 background(105, 161, 224);
-// The ground
-fill(60, 255, 0);
-rect(0, 300, 400, 100);  
-// The sun
-fill(247, 247, 232);
-ellipse(80, 64, 100, 100);  
-// The snowman
-fill(246, 247, 237);
-ellipse(200, 300, 150, 150);
-ellipse(200, 200, 100, 100);
-ellipse(200, 120, 75, 75);
+		// The ground
+		fill(60, 255, 0);
+		rect(0, 300, 400, 100);  
+		// The sun
+		fill(247, 247, 232);
+		ellipse(80, 64, 100, 100);  
+		// The snowman
+		fill(246, 247, 237);
+		ellipse(200, 300, 150, 150);
+		ellipse(200, 200, 100, 100);
+		ellipse(200, 120, 75, 75);
 	}
   
   
-  </script>
-  <canvas id="canvas1"></canvas>
 
+  </script>
+  <canvas id="snowman"></canvas>
+	  
+	  
+<script type="text/processing">
+
+	var x = 200;
+	var y = 250;
+
+	void setup() {
+		size(500,500);
+		background(65, 158, 3);
+		
+		noStroke();
+		fill(30, 204, 91); // a nice froggy green!
+
+		ellipse(x, y, 200, 100); // face
+		ellipse(x - 50, y - 50, 40, 40); // left eye socket
+		ellipse(x + 50, y - 50, 40, 40); // right eye socket
+
+		fill(255, 255, 255); // for the whites of the eyes!
+		ellipse(x - 50, y - 50, 30, 30); // left eyeball
+		ellipse(x + 50, y - 50, 30, 30); // right eyeball
+
+		fill(20, 13, 13);
+		ellipse(x,y,150,65);
+
+		rect(x-50, y-50,10,10);
+		rect(x+50, y-50,10,10);
+	}
+	
+	void draw() {
+	
+	
+	}
+   </script>
+  <canvas id="frog"></canvas>
 
   </body>
 </html>
